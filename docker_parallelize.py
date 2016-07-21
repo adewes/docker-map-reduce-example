@@ -55,7 +55,8 @@ def analyze_files_in_container(files):
         }
 
     container = client.create_container(
-        image='analysis_test',
+        image=CONTAINER_NAME,
+        user=os.getuid(),
         host_config=host_config,
         environment=environment)   
 
