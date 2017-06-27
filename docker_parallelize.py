@@ -13,7 +13,7 @@ N = 6
 Supervisor script to launch Docker containers and reduce the results produced by them.
 """
 
-client = docker.Client()
+client = docker.APIClient()
 
 def get_files(directory):
     filenames = os.listdir(directory)
