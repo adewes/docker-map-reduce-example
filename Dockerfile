@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Andreas Dewes
+LABEL maintainer "Andreas Dewes"
 
 RUN apt-get update
 RUN apt-get install -y python3
